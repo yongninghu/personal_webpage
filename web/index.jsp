@@ -6,9 +6,11 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>Yong</title>
+    <link href="../static/css/boostrap.min.css" rel="stylesheet">
   </head>
   <body>
   $END$
