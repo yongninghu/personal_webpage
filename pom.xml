@@ -60,7 +60,7 @@
                     <artifactId>maven-war-plugin</artifactId>
                     <version>${maven-plugin-war-version}</version>
                     <configuration>
-                        <warName>yncraig_home</warName>
+                        <warSourceDirectory>src/main/webapp</warSourceDirectory>
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                     </configuration>
                 </plugin>
