@@ -4,22 +4,22 @@
     <head>
         <title>Yong</title>
         <link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.min.css" />" type="text/css"/>
+        <link rel="stylesheet" href="<c:url value="/resources/css/styles.css" />" type="text/css"/>
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">${name}</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="active"><a href="/">&nbsp;Home</a></li>
+                        <li><a>&nbsp;Blog</a></li>
+                        <li><a>&nbsp;Projects</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
 
+        <script src="<c:url value="/resources/js/jquery.min.js"/>"></script>
         <script src="<c:url value="/resources/js/boostrap.min.js"/>"></script>
     </body>
 </html>
