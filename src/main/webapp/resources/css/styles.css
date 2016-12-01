@@ -1,0 +1,11 @@
+body {
+    background-color: #46b8da;
+}
+/*
+.navbar {
+    background-color: gray;
+}
+*/
+.nav.navbar-nav.navbar-left li a:hover{
+    color: #46b8da;
+}
