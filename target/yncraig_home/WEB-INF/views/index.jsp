@@ -7,18 +7,25 @@
         <link rel="stylesheet" href="<c:url value="/resources/css/styles.css" />" type="text/css"/>
     </head>
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li class="active"><a href="/">&nbsp;Home</a></li>
-                        <li><a>&nbsp;Blog</a></li>
-                        <li><a>&nbsp;Projects</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div class="container">
+            <nav class="navbar navbar-inverse bg-faded">
 
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="active"><a href="/">&nbsp;Home</a></li>
+                            <li><a>&nbsp;Blogs</a></li>
+                            <li><a>&nbsp;Projects</a></li>
+                            <li><a>&nbsp;Tutorials</a></li>
+                        </ul>
+                    </div>
+
+            </nav>
+
+            <div class="jumbotron ">
+                <h1>About Me</h1>
+                <p>I am just some guy.</p>
+            </div>
+        </div>
         <script src="<c:url value="/resources/js/jquery.min.js"/>"></script>
         <script src="<c:url value="/resources/js/boostrap.min.js"/>"></script>
     </body>

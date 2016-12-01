@@ -1,11 +1,16 @@
 body {
     background-color: #46b8da;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-/*
+
 .navbar {
+    /*
     background-color: gray;
+    */
+    margin-bottom: 20px;
 }
-*/
+
 .nav.navbar-nav.navbar-left li a:hover{
     color: #46b8da;
 }
