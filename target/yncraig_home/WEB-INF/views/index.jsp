@@ -9,21 +9,19 @@
     <body>
         <div class="container">
             <nav class="navbar navbar-inverse bg-faded">
-
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav navbar-left">
-                            <li class="active"><a href="/">&nbsp;Home</a></li>
-                            <li><a>&nbsp;Blogs</a></li>
-                            <li><a>&nbsp;Projects</a></li>
-                            <li><a>&nbsp;Tutorials</a></li>
-                        </ul>
-                    </div>
-
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="active"><a href="/">&nbsp;Home</a></li>
+                        <li><a>&nbsp;Blogs</a></li>
+                        <li><a>&nbsp;Projects</a></li>
+                        <li><a>&nbsp;Tutorials</a></li>
+                    </ul>
+                </div>
             </nav>
 
             <div class="jumbotron ">
-                <h1>About Me</h1>
-                <p>I am just some guy.</p>
+                <h1>${name}</h1>
+                <p>${intro}</p>
             </div>
         </div>
         <script src="<c:url value="/resources/js/jquery.min.js"/>"></script>

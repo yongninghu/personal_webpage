@@ -20,8 +20,8 @@
             </nav>
 
             <div class="jumbotron ">
-                <h1>About Me</h1>
-                <p>I am just some guy.</p>
+                <h1>${name}</h1>
+                <p>${intro}</p>
             </div>
         </div>
         <script src="<c:url value="/resources/js/jquery.min.js"/>"></script>

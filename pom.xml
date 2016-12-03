@@ -17,6 +17,7 @@
         <org.springframework-version>4.3.4.RELEASE</org.springframework-version>
         <javax.servlet-version>3.1.0</javax.servlet-version>
         <javax.servlet-jstl-version>1.2</javax.servlet-jstl-version>
+        <java-mongo-driver-version>3.4.0</java-mongo-driver-version>
         <maven-plugin-compiler-version>3.6.0</maven-plugin-compiler-version>
         <maven-plugin-war-version>3.0.0</maven-plugin-war-version>
     </properties>
@@ -37,6 +38,11 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>${javax.servlet-jstl-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver</artifactId>
+            <version>${java-mongo-driver-version}</version>
         </dependency>
     </dependencies>
 
