@@ -23,6 +23,13 @@
                 <h1>${name}</h1>
                 <p>${intro}</p>
             </div>
+
+            <c:forEach items="${postList}" var="post">
+                <div class ="jumbotron">
+                    <h1><c:out value="${post.name}"/></h1>
+                    <p><c:out value="${post.intro}"/></p>
+                </div>
+            </c:forEach>
         </div>
         <script src="<c:url value="/resources/js/jquery.min.js"/>"></script>
         <script src="<c:url value="/resources/js/boostrap.min.js"/>"></script>
