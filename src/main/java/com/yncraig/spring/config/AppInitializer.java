@@ -8,6 +8,7 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
+import org.apache.log4j.BasicConfigurator;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
@@ -24,6 +25,8 @@ public class AppInitializer implements WebApplicationInitializer {
 
         servlet.setLoadOnStartup(1);
         servlet.addMapping("/");
+
+        BasicConfigurator.configure();
     }
 
 }

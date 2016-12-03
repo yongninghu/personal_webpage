@@ -18,8 +18,10 @@
         <javax.servlet-version>3.1.0</javax.servlet-version>
         <javax.servlet-jstl-version>1.2</javax.servlet-jstl-version>
         <java-mongo-driver-version>3.4.0</java-mongo-driver-version>
+        <spring-mongo-version>1.9.5.RELEASE</spring-mongo-version>
         <maven-plugin-compiler-version>3.6.0</maven-plugin-compiler-version>
         <maven-plugin-war-version>3.0.0</maven-plugin-war-version>
+        <logger-slf4j-version>1.7.21</logger-slf4j-version>
     </properties>
 
     <dependencies>
@@ -27,6 +29,11 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${org.springframework-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-mongodb</artifactId>
+            <version>${spring-mongo-version}</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -43,6 +50,16 @@
             <groupId>org.mongodb</groupId>
             <artifactId>mongodb-driver</artifactId>
             <version>${java-mongo-driver-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${logger-slf4j-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${logger-slf4j-version}</version>
         </dependency>
     </dependencies>
 

@@ -20,7 +20,7 @@ public class IndexController {
     @GetMapping("/")
     public String index(Model model) {
 
-        User user = is.getUser();
+        User user = is.getUser("Yong Ning Hu");
         model.addAttribute("name", user.getName());
         model.addAttribute("intro", user.getIntro());
 
