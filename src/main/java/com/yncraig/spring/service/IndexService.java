@@ -18,20 +18,13 @@ import org.springframework.stereotype.Service;
 public class IndexService {
 
     @Autowired
-    private static MongoOperations mo;
-
-    public IndexService() {}
+    private MongoOperations mo;
 
     //I am the only User of this db.
     public User getUser(String name) {
-        //Query searchUserQuery = new Query(Criteria.where("name").is(name));
+        Query searchUserQuery = new Query(Criteria.where("name").is(name));
 
-        // find the saved user again.
-        //User savedUser = mo.findOne(searchUserQuery, User.class);
-        User savedUser = new User();
-        savedUser.setIntro("hi");
-        savedUser.setName("hi");
-        savedUser.setId("1");
-        return savedUser;
+        User savedUser = mo.findOne(searchUserQuery, User.class);
+        return savedUser == null ? new User(): savedUser;
     }
 }
