@@ -31,7 +31,7 @@ public class IndexController {
         model.addAttribute("name", user.getName());
         model.addAttribute("intro", user.getIntro());
 
-        List<Post> pl = ps.getPost("Yong");
+        List<Post> pl = ps.getPost("Yong", "all");
         model.addAttribute("postList", pl);
         return "index";
     }

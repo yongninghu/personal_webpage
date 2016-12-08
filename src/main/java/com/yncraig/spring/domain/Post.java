@@ -16,6 +16,7 @@ public class Post {
     private String intro;
     private String description;
     private String owner;
+    private String type;
 
     public String getId() {
         return this.Id;
@@ -55,5 +56,13 @@ public class Post {
 
     public void setOwner(String owner) {
         this.owner = owner;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }

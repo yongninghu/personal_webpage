@@ -18,7 +18,11 @@ public class PostService {
     private MongoOperations mo;
 
     //I am and will be the only User of this db.
-    public List<Post> getPost(String name) {
+    public List<Post> getPost(String name, String type) {
+        Criteria newCriteria = Criteria.where("owner").is(name);
+        if(!type.equals("all")) {
+            newCriteria.andOperator(Criteria.where("type").is(type));
+        }
         Query searchUserQuery = new Query(Criteria.where("owner").is(name));
 
         List<Post> savedPosts = mo.find(searchUserQuery, Post.class);
