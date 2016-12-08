@@ -12,24 +12,28 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
                         <li class="active"><a href="/">&nbsp;Home</a></li>
-                        <li><a>&nbsp;Blogs</a></li>
-                        <li><a>&nbsp;Projects</a></li>
-                        <li><a>&nbsp;Tutorials</a></li>
+                        <li><a href="/blog">&nbsp;Blogs</a></li>
+                        <li><a href="/project">&nbsp;Projects</a></li>
+                        <li><a href="/tutorial">&nbsp;Tutorials</a></li>
                     </ul>
                 </div>
             </nav>
 
-            <div class="jumbotron ">
-                <h1>${name}</h1>
-                <p>${intro}</p>
-            </div>
-
-            <c:forEach items="${postList}" var="post">
-                <div class ="jumbotron">
-                    <h1><c:out value="${post.name}"/></h1>
-                    <p><c:out value="${post.intro}"/></p>
+            <c:if test="${name != null and intro != null}">
+                <div class="jumbotron ">
+                    <h1>${name}</h1>
+                    <p>${intro}</p>
                 </div>
-            </c:forEach>
+            </c:if>
+
+            <c:if test="${not empty postList}">
+                <c:forEach items="${postList}" var="post">
+                    <div class ="jumbotron">
+                        <h1><c:out value="${post.name}"/></h1>
+                        <p><c:out value="${post.intro}"/></p>
+                    </div>
+                </c:forEach>
+            </c:if>
         </div>
         <script src="<c:url value="/resources/js/jquery.min.js"/>"></script>
         <script src="<c:url value="/resources/js/boostrap.min.js"/>"></script>

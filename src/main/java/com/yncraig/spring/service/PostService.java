@@ -23,7 +23,7 @@ public class PostService {
         if(!type.equals("all")) {
             newCriteria.andOperator(Criteria.where("type").is(type));
         }
-        Query searchUserQuery = new Query(Criteria.where("owner").is(name));
+        Query searchUserQuery = new Query(newCriteria);
 
         List<Post> savedPosts = mo.find(searchUserQuery, Post.class);
         return savedPosts;

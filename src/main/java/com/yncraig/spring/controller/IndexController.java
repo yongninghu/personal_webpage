@@ -18,16 +18,20 @@ import java.util.List;
 @Controller
 public class IndexController {
 
-    @Autowired
-    UserService is;
+    UserService us;
+
+    PostService ps;
 
     @Autowired
-    PostService ps;
+    public IndexController(UserService us, PostService ps) {
+        this.us = us;
+        this.ps = ps;
+    }
 
     @GetMapping("/")
     public String index(Model model) {
 
-        User user = is.getUser("Yong");
+        User user = us.getUser("Yong");
         model.addAttribute("name", user.getName());
         model.addAttribute("intro", user.getIntro());
 
